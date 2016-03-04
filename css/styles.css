@@ -15,14 +15,13 @@ body {
 }
 
 .header .tagline {
-  font-size: 26px;
+  font-size: 22px;
   padding: 0 20px;
 }
 
 @media only screen and (max-width: 768px) {
   .header .tagline {
     display: block;
-    margin-top: 100px;
   }
 }
 
@@ -122,6 +121,19 @@ body {
           transform: translateX(-50%);
 }
 
+@media only screen and (max-width: 768px) {
+  .button-down {
+    bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .button-gray {
+    height: 50px;
+    width: 50px;
+  }
+}
+
 .man-img {
   width: 650px;
   height: auto;
@@ -131,6 +143,12 @@ body {
   font-size: 32px;
   display: inline-block;
   padding: 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .info {
+    font-size: 22px;
+  }
 }
 
 .section-header {
@@ -156,9 +174,21 @@ body {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .section-header {
+    font-size: 46px;
+  }
+}
+
 .services-container {
   width: 80%;
   margin: 0 auto;
+}
+
+@media only screen and (max-width: 480px) {
+  .services-container {
+    margin-top: 10px;
+  }
 }
 
 .services-box {
@@ -172,12 +202,12 @@ body {
   .services-box {
     padding: 0 50px;
     width: 100%;
-    height: 120px;
+    height: 90px;
     text-align: left;
     clear: both;
   }
   .services-box img {
-    width: 90px;
+    width: 60px;
     clear: both;
     vertical-align: middle;
   }
@@ -235,6 +265,12 @@ body {
   height: 400px;
 }
 
+@media only screen and (max-width: 768px) {
+  #map {
+    height: 300px;
+  }
+}
+
 /* shadow styling */
 .map-container {
   position: relative;
@@ -280,6 +316,12 @@ body {
   margin-bottom: 40px;
 }
 
+@media only screen and (max-width: 768px) {
+  .contact .section-top {
+    margin-bottom: 0;
+  }
+}
+
 .form {
   text-align: center;
   width: 30%;
@@ -303,6 +345,12 @@ body {
   color: #4d4c4e;
 }
 
+@media only screen and (max-width: 480px) {
+  .form input {
+    padding: 10px;
+  }
+}
+
 .form textarea {
   width: 100%;
   box-sizing: border-box;
@@ -313,6 +361,13 @@ body {
   padding: 15px;
   font-size: 24px;
   color: #4d4c4e;
+}
+
+@media only screen and (max-width: 480px) {
+  .form textarea {
+    padding: 10px;
+    height: 170px;
+  }
 }
 
 .form button {

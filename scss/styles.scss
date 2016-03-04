@@ -17,12 +17,12 @@ body {
     }
 
     .tagline {
-        font-size: 26px;
+        font-size: 22px;
 		padding: 0 20px;
 
         @include mq(sm) {
             display: block;
-            margin-top: 100px;
+            //margin-top: 100px;
         }
     }
 }
@@ -108,6 +108,17 @@ body {
 	position: absolute;
     bottom: 50px;
 	@include center(x);
+
+    @include mq(sm) {
+        bottom: 20px;
+    }
+}
+
+.button-gray {
+    @include mq(sm) {
+        height: 50px;
+        width: 50px;
+    }
 }
 
 .man-img {
@@ -119,6 +130,10 @@ body {
     font-size: 32px;
 	display: inline-block;
 	padding: 0 20px;
+
+    @include mq(sm) {
+        font-size: 22px;
+    }
 }
 
 .section-header {
@@ -132,11 +147,19 @@ body {
         @include center(xy);
         font-size: 50px;
     }
+
+    @include mq(xs) {
+        font-size: 46px;
+    }
 }
 
 .services-container {
     width: 80%;
     margin: 0 auto;
+
+    @include mq(xs) {
+        margin-top: 10px;
+    }
 }
 
 .services-box {
@@ -148,11 +171,11 @@ body {
     @include mq(md) {
         padding: 0 50px;
         width: 100%;
-        height: 120px;
+        height: 90px;
         text-align: left;
         clear: both;
         img {
-            width: 90px;
+            width: 60px;
             clear: both;
             vertical-align: middle;
         }
@@ -204,6 +227,10 @@ body {
 #map {
     width: 100%;
     height: 400px;
+
+    @include mq(sm) {
+        height: 300px;
+    }
 }
 
 /* shadow styling */
@@ -252,6 +279,10 @@ body {
 .contact {
     .section-top {
         margin-bottom: 40px;
+
+        @include mq(sm) {
+            margin-bottom: 0;
+        }
     }
 }
 
@@ -273,6 +304,10 @@ body {
         border-radius: 5px;
         font-size: 24px;
         color: #4d4c4e;
+
+        @include mq(xs) {
+            padding: 10px;
+        }
     }
 
     textarea {
@@ -285,6 +320,11 @@ body {
         padding: 15px;
         font-size: 24px;
         color: #4d4c4e;
+
+        @include mq(xs) {
+            padding: 10px;
+            height: 170px;
+        }
     }
 
     button {
